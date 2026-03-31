@@ -1,0 +1,46 @@
+{
+  "id": "commax-mcp",
+  "name": "Commax Smart Home",
+  "description": "Control Commax smart home devices — lights, HVAC, ventilation, gas valve, air quality, meters, and scenes",
+  "version": "1.0.0",
+  "contracts": {
+    "tools": [
+      "commax_list_devices",
+      "commax_control_switch",
+      "commax_control_thermostat",
+      "commax_control_ventilation",
+      "commax_read_air_quality",
+      "commax_read_meters",
+      "commax_control_standby_power",
+      "commax_control_gas_lock",
+      "commax_control_master_light",
+      "commax_list_scenes",
+      "commax_execute_scene",
+      "commax_create_scene"
+    ]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "username": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      }
+    },
+    "required": ["username", "password"]
+  },
+  "uiHints": {
+    "username": {
+      "label": "Commax account username",
+      "placeholder": "your_username"
+    },
+    "password": {
+      "label": "Commax account password",
+      "placeholder": "your_password",
+      "sensitive": true
+    }
+  }
+}

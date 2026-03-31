@@ -9,8 +9,15 @@
     "test": "vitest run",
     "start": "node dist/index.js"
   },
+  "openclaw": {
+    "extensions": [
+      "./src/openclaw-entry.ts"
+    ],
+    "installDependencies": true
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
+    "@sinclair/typebox": "^0.34.49",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
@@ -18,5 +25,14 @@
     "tsx": "^4.0.0",
     "typescript": "^5.0.0",
     "vitest": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "commax",
+    "smart-home",
+    "mcp",
+    "iot"
+  ],
+  "license": "MIT"
 }
